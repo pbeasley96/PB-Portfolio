@@ -1,0 +1,158 @@
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(175, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+.openbtn {
+    position: fixed;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(175, 0, 0);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color: #ff0000;
+}
+  
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+  
+.home-container {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    margin: 375px;
+    color: #9e0000;
+    font-size: 75px;
+}
+
+h2 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+p {
+    color: #f1f1f1;
+    font-size: 25px;
+}
+
+.about-container {
+    background-color: #9e0000;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.info-container {
+    background-color: black;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+* {box-sizing: border-box}
+.mySlides{display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    background-color: whitesmoke;
+    position: relative;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 50px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 20px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 55px;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+    color: black;
+}
+
+#footer {
+    background-color: #9e0000;
+    color: whitesmoke;
+    text-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 1);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+    margin-top: 13%;
+}
