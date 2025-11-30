@@ -8,7 +8,7 @@ function closeNav() {     //Nav Button Closed//
     document.getElementById("main").style.marginLeft= "0";
 }
 
-var slideIndex = [1,1,1,1,1];
+var slideIndex = [1,1,1,1,1]; //Function to produce individual slideshows//
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
 showSlides(1, 0);
 showSlides(1, 1);

@@ -1,3 +1,5 @@
+//Function for Quiz App//
+//Questions//
 const quizData = [
     {
         question: "What was the first movie to introduce the Marvel Cinematic Universe?",
@@ -61,6 +63,7 @@ let currentQuestion = 0;
 let score = 0;
 let incorrectAnswers = [];
 
+//Shuffle answers for each question//
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -68,6 +71,7 @@ function shuffleArray(array) {
   }
 }
 
+//Displays each question along with 4 choices//
 function displayQuestion() {
   const questionData = quizData[currentQuestion];
 
@@ -102,6 +106,7 @@ function displayQuestion() {
   quizContainer.appendChild(optionsElement);
 }
 
+//Check entry on whether the anwser is correct or not//
 function checkAnswer() {
   const selectedOption = document.querySelector('input[name="quiz"]:checked');
   if (selectedOption) {
@@ -125,6 +130,7 @@ function checkAnswer() {
   }
 }
 
+//Display the final result of questions answered// 
 function displayResult() {
   quizContainer.style.display = 'none';
   submitButton.style.display = 'none';
@@ -133,6 +139,7 @@ function displayResult() {
   resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}!`;
 }
 
+//Function to retry the quiz//
 function retryQuiz() {
   currentQuestion = 0;
   score = 0;
@@ -176,10 +183,10 @@ showAnswerButton.addEventListener('click', showAnswer);
 displayQuestion();
 
 //Back to top button//
-// Get the button
+// Get the button//
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// When the user scrolls down 20px from the top of the document, show the button//
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -190,7 +197,7 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// When the user clicks on the button, scroll to the top of the document//
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
